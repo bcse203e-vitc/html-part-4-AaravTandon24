@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration for online event</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="/register" method="post">
+        <label for="full-name">Full Name:</label><br>
+        <input type="text" id="full-name" name="full-name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br>
+
+        <label for="phone-number">Phone Number:</label><br>
+        <input type="number" id="phone-number" name="phone-number" required><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="Male" name="gender" value="Male">
+        <label for="Female">Male</label><br>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="Female">Female</label><br><br>
+
+        <label for="age">Your age:</label><br><br>
+
+        <select name="age" id="age">
+        <option value="10-20">10-20</option>
+        <option value="20-30">20-30</option>
+        <option value="30-40">30-40</option>
+        <option value="40+">40+</option>
+        </select><br><br>
+
+        <label for="Topics Of Interest">Topics of Interest</label><br>
+        <input type="checkbox" id="topic1" name="topic1" value="AI">
+        <label for="topic1"> AI</label><br>
+        <input type="checkbox" id="topic2" name="topic2" value="Data Science">
+        <label for="topic2"> Data Science</label><br>
+        <input type="checkbox" id="topic3" name="topic3" value="CyberSecurity">
+        <label for="topic3"> CyberSecurity</label><br><br>
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
