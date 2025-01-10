@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form action="/submit-feedback" method="post">
+        <label for="full-name">Full Name:</label><br>
+        <input type="text" id="full-name" name="full-name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="rating">Rating (1 to 5 Stars):</label><br>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">1</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">2</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">3</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">4</label>
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">5</label><br><br>
+
+        <label for="feedback-type">Type of Feedback:</label><br>
+        <select name="feedback-type" id="feedback-type">
+            <option value="suggestion">Suggestion</option>
+            <option value="bug-report">Bug Report</option>
+            <option value="compliment">Compliment</option>
+        </select><br><br>
+
+        <label for="feedback">Your Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="recommend">Would you recommend us?</label><br>
+        <input type="radio" id="recommend-yes" name="recommend" value="yes">
+        <label for="recommend-yes">Yes</label>
+        <input type="radio" id="recommend-no" name="recommend" value="no">
+        <label for="recommend-no">No</label><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
