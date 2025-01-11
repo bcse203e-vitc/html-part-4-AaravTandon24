@@ -42,36 +42,5 @@
 
         <button type="submit">Submit Order</button>
     </form>
-
-    <script>
-        function updatePrice() {
-            var product = document.getElementById('product');
-            var quantity = document.getElementById('quantity').value;
-            var price = parseInt(product.options[product.selectedIndex].getAttribute('data-price'));
-            var totalPrice = price * quantity;
-
-            var delivery = document.querySelector('input[name="delivery"]:checked').value;
-            if (delivery === 'express') {
-                totalPrice += 15;
-            }
-
-            document.getElementById('total-price').textContent = '$' + totalPrice;
-        }
-
-        function applyCoupon() {
-            var coupon = document.getElementById('coupon').value;
-            var totalPrice = parseInt(document.getElementById('total-price').textContent.substring(1));
-
-            if (coupon === 'DISCOUNT10') {
-                totalPrice = totalPrice * 0.9;
-            } else if (coupon === 'DISCOUNT20') {
-                totalPrice = totalPrice * 0.8;
-            }
-
-            document.getElementById('total-price').textContent = '$' + totalPrice.toFixed(2);
-        }
-
-        window.onload = updatePrice;
-    </script>
 </body>
 </html>
