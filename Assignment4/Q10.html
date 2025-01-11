@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customizable Form Template</title>
+  </head>
+  <body>
+    <h1>Customizable Form Template</h1>
+    <form action="/submit-form" method="post">
+      
+      <label for="formname">Form Name:</label><br />
+      <input type="text" id="formname" name="formname" placeholder="Enter form name" required /><br /><br />
+      
+      <label for="numfields">Number of Fields:</label><br />
+      <input type="number" id="numfields" name="numfields" placeholder="Enter number of fields" min="1" required /><br /><br />
+      
+      <fieldset>
+        <legend>Field 1</legend>
+        
+        <label for="label1">Field Label:</label><br />
+        <input type="text" id="label1" name="label1" placeholder="Enter label" required /><br /><br />
+        
+        <label for="type1">Field Type:</label><br />
+        <select id="type1" name="type1" required>
+          <option value="text">Text</option>
+          <option value="email">Email</option>
+          <option value="number">Number</option>
+          <option value="date">Date</option>
+        </select><br /><br />
+        
+        <label for="input1">Input Field:</label><br />
+        <input type="text" id="input1" name="input1" placeholder="Input field" required /><br /><br />
+      </fieldset>
+      
+      <fieldset>
+        <legend>Field 2</legend>
+        
+        <label for="label2">Field Label:</label><br />
+        <input type="text" id="label2" name="label2" placeholder="Enter label" required /><br /><br />
+        
+        <label for="type2">Field Type:</label><br />
+        <select id="type2" name="type2" required>
+          <option value="text">Text</option>
+          <option value="email">Email</option>
+          <option value="number">Number</option>
+          <option value="date">Date</option>
+        </select><br /><br />
+        
+        <label for="input2">Input Field:</label><br />
+        <input type="text" id="input2" name="input2" placeholder="Input field" required /><br /><br />
+      </fieldset>
+      
+      <fieldset>
+        <legend>Field 3</legend>
+        
+        <label for="label3">Field Label:</label><br />
+        <input type="text" id="label3" name="label3" placeholder="Enter label" required /><br /><br />
+        
+        <label for="type3">Field Type:</label><br />
+        <select id="type3" name="type3" required>
+          <option value="text">Text</option>
+          <option value="email">Email</option>
+          <option value="number">Number</option>
+          <option value="date">Date</option>
+        </select><br /><br />
+        
+        <label for="input3">Input Field:</label><br />
+        <input type="text" id="input3" name="input3" placeholder="Input field" required /><br /><br />
+      </fieldset>
+
+      <button type="submit">Submit Form</button>
+    </form>
+  </body>
+</html>
